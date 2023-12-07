@@ -34,7 +34,8 @@ if (isset($_REQUEST['Submit'])) {
 			$stmt = $sqlite_db_connection->prepare($query);
 			$stmt->bindValue(1, $id, SQLITE3_TEXT);
 			$results = $stmt->execute();
-
+			// check vul
+echo "Alas";
 			if ($results) {
 				while ($row = $results->fetchArray()) {
 					// Get values
